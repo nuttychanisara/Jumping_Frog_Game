@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D8978DF1-1CEE-4DB8-9C88-F64CBFA16976}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jumping_Frog</RootNamespace>
+    <AssemblyName>Jumping_Frog</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighScore.cs" />
+    <Compile Include="Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\but_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg new.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป ปุ่มปิดเสียง.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป ปุ่มเปิดเสียง.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullSizeRender.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frog4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogJD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogJL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogJR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frogR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\กบรถชน.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ1.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ1.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ2.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ3.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ4.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ5.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ6.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ7.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ8.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ9.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป รถ10.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เต่าไม่ขึ้นจากน้ำ 2 ตัว.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เต่าไม่ขึ้นจากน้ำ.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เต่าปกติ 2 ตัว.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เต่าปกติ.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูปขอนไม้ 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป แมลงวัน2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bggame4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\กบกระโดด.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\กบโดนทับ.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\กบจม.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\น้ำจ้า.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\กบจมน้ำ.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\กบถึงเส้นชัย.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gameover.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รูป ปุ่มออกจากเกม.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
