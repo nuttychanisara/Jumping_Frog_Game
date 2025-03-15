@@ -1,6 +1,5 @@
 # Jumping_Frog_Game
 A project for the coures COMP PROG FOR MATH II
-
 •  Developed the Jumping Frog game using C# and Visual Studio 2019.  
 •  Designed and implemented core gameplay mechanics.  
 •  Applied fundamental programming concepts learned from coursework.  
