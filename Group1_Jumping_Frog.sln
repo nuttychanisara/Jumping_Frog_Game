@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jumping_Frog", "Jumping_Frog\Jumping_Frog.csproj", "{D8978DF1-1CEE-4DB8-9C88-F64CBFA16976}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8978DF1-1CEE-4DB8-9C88-F64CBFA16976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8978DF1-1CEE-4DB8-9C88-F64CBFA16976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8978DF1-1CEE-4DB8-9C88-F64CBFA16976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8978DF1-1CEE-4DB8-9C88-F64CBFA16976}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {920EBF51-3B4C-4501-B3C9-08D4EFAA862B}
+	EndGlobalSection
+EndGlobal
